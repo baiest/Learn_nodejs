@@ -1,0 +1,21 @@
+<div class="container form">
+    <h1>{{persona}}</h1>
+    <br>
+    <form action="/personaForm/persona/operar" method="POST">
+        <input type="hidden" name='_id' value="{{persona.id}}">
+        <div class="form-group">
+            <label for="nombres">Nombres</label>
+            <input type="text" name="nombres" id="nombres" class="form-group" value="{{persona.nombre}}">     
+        </div>
+        <div class="form-group">
+            <label for="Apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" class="form-group" value="{{persona.apellido}}">     
+        </div>
+        <div class="form-group">
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" class="form-group" value="{{persona.edad}}">     
+        </div>
+        <button type="submit" class="btn btn-primary">Aceptar</button>
+        <a href="/" class="btn btn-danger">Cancelar</a>
+    </form>
+</div>
